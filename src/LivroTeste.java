@@ -22,9 +22,12 @@ public class LivroTeste {
         livroFavorito.paginas = 500;
         livroFavorito.autor = "Dan Brown";
         Editora editora2 = new Editora("Felipe");
+        editora.nome = "Editora Felipe";
+        editora.email = "felipeeduardogit@gmail.com";
 
 
         livroFavorito.editora = editora2;
+        livroFavorito.tipoCapa = TipoCapaEnum.PERSONALIZADA;
 
         livroFavorito.aplicarDesconto(0.25);
 
