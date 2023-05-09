@@ -10,20 +10,22 @@ public class LivroTeste {
 
         Editora editora = new Editora();
         //editora.nome = "Felipe";
-        editora.email = "felipeeduardo.git@gmail.com";
+        editora.setEmail ("felipeeduardo.git@gmail.com");
         meuLivro.setEditora (editora);
         meuLivro.aplicarDesconto(0.5);
 
         meuLivro.exibirDados();
 
-        Livro livroFavorito = new Livro("O Código Da Vinci", 27.90);
+        LivroDigital livroFavorito = new LivroDigital("O Código Da Vinci", 27.90);
         livroFavorito.setNome ("O Código Da Vinci");
         livroFavorito.setResumo ("bla bla bla bla bla");
         livroFavorito.setPaginas (500);
         livroFavorito.setAutor ("Dan Brown");
+        livroFavorito.setMarcaDAgua(" felipeeduardo@gmail.com");
+
         Editora editora2 = new Editora("Felipe");
-        editora.nome = "Editora Felipe";
-        editora.email = "felipeeduardogit@gmail.com";
+        editora.setNome ("Editora Felipe");
+        editora.setEmail ("felipeeduardogit@gmail.com");
 
 
         livroFavorito.setEditora (editora2);

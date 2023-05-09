@@ -67,7 +67,7 @@ public class Livro {
         this.tipoCapa = tipoCapa;
     }
 
-    public Livro(String nome, double preco) {
+    public Livro(String nome, double preco) { //Construtor
         this.nome = nome; //this é a referencia aos atributos
         this.preco = preco;
         tipoCapa = TipoCapaEnum.COMUM;
@@ -82,7 +82,7 @@ public class Livro {
         System.out.println("Tipo de Capa: " + tipoCapa);
 
         if (temEditora())
-            System.out.println("Editora: " + editora.nome);
+            System.out.println("Editora: " + editora.getNome());
 
         System.out.println("-------");
     }
